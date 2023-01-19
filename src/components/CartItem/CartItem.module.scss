@@ -1,0 +1,29 @@
+.cartItem{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img{
+        width: 6rem;
+        border-radius: 0.5rem;
+    }
+    .info{
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+        font-size: 1.3rem;
+        .title__item{
+            color: hsl(219, 9%, 45%);
+        }
+        .info__price{
+            .firstPrice{
+                color: hsl(219, 9%, 45%);
+            }
+            .priceXQuantity{
+                font-weight: bold;
+            }
+        }
+    }
+}

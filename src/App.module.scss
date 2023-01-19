@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@500&display=swap');
+
+html{
+    font-size: 62.5%;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li{
+    list-style-type: none;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.App{
+    min-height: 100vh;
+    .container{
+        max-width: 1200px;
+        margin: auto;
+        .main{
+            display: flex;
+            flex-direction: column;
+            .modalProduct__images{
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .App{
+        .container{
+            max-width: 1200px;
+            .main{
+                width: 85%;
+                max-width: 1200px;
+                margin: 10rem auto 0 auto;
+                flex-direction: row;
+                gap: 10rem;
+                .modalProduct__images{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    background-color: rgba(48, 45, 45, 0.8);
+                    z-index: 1;
+                    p{
+                        margin-left: 58rem;
+                        margin-bottom: 4rem;
+                    }
+                    .close__modal{
+                        color: #fff;
+                        transition: color 0.3s ease-in-out;
+                        &:hover{
+                            color: hsl(26, 100%, 55%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

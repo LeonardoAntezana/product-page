@@ -1,0 +1,26 @@
+.modal{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(48, 45, 45, 0.8);
+    z-index: 1;
+    .menuMobile{
+        height: 100%;
+        width: 22rem;
+        padding: 2rem;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        li{
+            font-size: 2rem;
+            cursor: pointer;
+        }
+        .container__iconClose{
+            height: 2rem;
+            width: 2rem;
+        }
+    }
+}
